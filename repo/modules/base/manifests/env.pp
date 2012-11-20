@@ -7,4 +7,8 @@ class base::env{
     content => "Welcome to your Vagrant-built virtual machine!
                 Managed by Puppet.\n"
   }
+
+  exec{"update apt":
+    command => "apt-get update",
+  }
 }
