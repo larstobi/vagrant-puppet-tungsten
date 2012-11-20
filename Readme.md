@@ -4,10 +4,8 @@ This Vagrant Multi-VM setup creates 3 VMs:
  - slave
  - web
 
-
- to allow you to test-drive tungsten replicator.
-
- Just started this vagrant/puppet bundle...
+to allow you to test-drive tungsten replicator.
+This is just a framework yet.
 
 
 
@@ -19,16 +17,16 @@ This Vagrant Multi-VM setup creates 3 VMs:
 #################################################################
 P.S: pls adjust the hostnames for each VM after the initial vagrant up:
 
->vim /etc/hostname
-web / master / slave
+    $ vim /etc/hostname
+      web / master / slave
 
->vim /etc/hosts
- ...
+    $ vim /etc/hosts
+     ...
 
- 127.0.0.1 .... web/master/slave
+     127.0.0.1 .... web/master/slave
 
->hostname (web/master/slave)
+    $ hostname (web/master/slave)
 
 
-> vagrant halt
-> vagrant up
+    $ vagrant halt
+    $ vagrant up
