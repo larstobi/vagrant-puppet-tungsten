@@ -9,3 +9,7 @@ node 'master' inherits base_node {
 node 'slave' inherits base_node {
 
 }
+
+node default inherits base_node{
+
+}
