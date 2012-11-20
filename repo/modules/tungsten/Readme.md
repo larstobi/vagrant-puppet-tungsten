@@ -1,4 +1,5 @@
-###
+### TUNGSTEN-REPLICATOR
+- http://code.google.com/p/tungsten-replicator/
 
 
 ### some articles for Tungsten
@@ -9,3 +10,4 @@
 
 ### Installation:
 - http://code.google.com/p/tungsten-replicator/wiki/InstallationPreRequisites
+- http://code.google.com/p/tungsten-replicator/wiki/TRCBasicInstallation
