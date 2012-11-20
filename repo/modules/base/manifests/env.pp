@@ -8,7 +8,7 @@ class base::env{
                 Managed by Puppet.\n"
   }
 
-  exec{"update apt":
-    command => "apt-get update",
-  }
+  # exec{"update apt":
+  #   command => "apt-get update",
+  # }
 }

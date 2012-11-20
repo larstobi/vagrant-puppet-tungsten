@@ -19,6 +19,13 @@ class tungsten::replicator::download{
     command => "echo 1 && \
       cd /tmp && \
       wget $tungsten::params::url",
-    unless => "test -e /tmp/$tungsten::params::file"
+    unless => "test -e /opt/$tungsten::params::folder"
+  }
+
+  exec{"prepare":
+    command => "mv  /tmp/$tungsten::params::file /opt && \
+    tar xvfz /opt/$tungsten::params::file",
+    require => Exec['download tungsten'],
+    unless  => "test -e /opt/$tungsten::params::folder"
   }
 }
